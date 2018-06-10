@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.photo {
+  height: 150px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: #171716;
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+  height: 150px;
+}
