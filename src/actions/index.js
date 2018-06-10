@@ -5,8 +5,7 @@ export const SET_INDEX = 'SET_INDEX';
 
 const apiKey = '7b6170c348dd41415881242592ddaa4e';
 
-export function downloadGallery() {
-  const value = 'cat';
+export function downloadGallery(value) {
   const pageNum = 1;
   return dispatch => {
     axios

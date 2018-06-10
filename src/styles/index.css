@@ -2,10 +2,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #fafafa;
 }
 
 .photo {
   height: 150px;
+}
+
+.photo-det {
+  transition: opacity 1s ease-in-out;
+  height: 350px;
+  max-width: 90%;
 }
 
 .slick-next:before,
@@ -16,4 +23,16 @@ body {
 .slick-slider .slick-list,
 .slick-slider .slick-track {
   height: 150px;
+}
+
+.text-help {
+  color: #ba004e;
+}
+
+.custom-file-control,
+.form-control,
+.is-focused .custom-file-control,
+.is-focused .form-control {
+  background-image: linear-gradient(0deg, #03a9f4 2px, rgba(0, 150, 136, 0) 0),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.26) 1px, transparent 0);
 }
