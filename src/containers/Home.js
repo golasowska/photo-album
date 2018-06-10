@@ -241,7 +241,7 @@ class Home extends Component {
               <SearchBar />
               <button
                 type="button"
-                className="btn btn-info col col-md-4"
+                className="btn btn-info col-md-4"
                 onClick={this.changeAnimationStyle}
               >
                 change animation

@@ -39,7 +39,7 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <div className="mt-5 d-inline-block col col-md-6">
+      <div className="mt-3 mt-md-5 d-inline-block col-md-6">
         <form onSubmit={this.props.handleSubmit(this.handleFormSubmit)}>
           <Field
             name="title"
