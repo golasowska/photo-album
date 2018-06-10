@@ -9,6 +9,9 @@ function validate(values) {
   if (!values.title) {
     errors.title = 'What photos are you looking for?';
   }
+  if (values.title && values.title.search(/\s/) > 0) {
+    errors.title = 'Please, enter a single word.';
+  }
   return errors;
 }
 
