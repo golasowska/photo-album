@@ -9,7 +9,7 @@ class PrevPhoto extends Component {
     let source = `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}.jpg`;
 
     return (
-      <div className="mr-3">
+      <div className="mr-md-3">
         <img className="photo" alt={title} src={source} />
       </div>
     );

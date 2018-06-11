@@ -4,8 +4,8 @@ This is a simple photo gallery that utilizes Flickr API as a photo database.
 
 If you click on the photo at the slide bar at the bottom the big photo in the center of the page will change and animate.
 
-In the searchbar that appears on the main page, just enter the searched phrase.
-The pictures related to the tag will be uploaded.
+There is also the searchbar that appears below the slidebar, so the user can find and fetch another photos to the gallery.
+And at the bottom of the page is a button for changing the animation style.
 
 ## Demo
 

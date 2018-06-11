@@ -4,119 +4,11 @@ import * as Actions from '../actions';
 import _ from 'lodash';
 import { PacmanLoader } from 'react-spinners';
 import Slider from 'react-slick';
-import {
-  vanishIn,
-  perspectiveDown,
-  magic,
-  swashOut,
-  swashIn,
-  vanishOut,
-  puffOut,
-  foolishIn,
-  holeOut,
-  twisterInDown,
-  swap,
-  puffIn,
-  openDownLeft,
-  openDownRight,
-  openUpLeft,
-  openUpRight,
-  openDownLeftOut,
-  openDownRightOut,
-  openUpLeftOut,
-  openUpRightOut,
-  perspectiveUp,
-  perspectiveLeft,
-  perspectiveRight,
-  rotateDown,
-  rotateUp,
-  rotateLeft,
-  rotateRight,
-  slideDownReturn,
-  slideUpReturn,
-  slideLeftReturn,
-  slideRightReturn,
-  spaceOutUp,
-  spaceOutRight,
-  spaceOutDown,
-  spaceOutLeft,
-  spaceInUp,
-  spaceInRight,
-  spaceInDown,
-  spaceInLeft,
-  boingInUp,
-  boingOutDown,
-  bombRightOut,
-  bombLeftOut,
-  tinRightOut,
-  tinLeftOut,
-  tinUpOut,
-  tinDownOut,
-  tinRightIn,
-  tinLeftIn,
-  tinUpIn,
-  tinDownIn,
-  foolishOut
-} from 'react-magic/lib';
 import { StyleSheet, css } from 'aphrodite';
 
 import PrevPhoto from './PrevPhoto';
 import SearchBar from './SearchBar';
-
-const animations = [
-  vanishIn,
-  perspectiveDown,
-  magic,
-  swashOut,
-  swashIn,
-  vanishOut,
-  puffOut,
-  foolishIn,
-  holeOut,
-  twisterInDown,
-  swap,
-  puffIn,
-  openDownLeft,
-  openDownRight,
-  openUpLeft,
-  openUpRight,
-  openDownLeftOut,
-  openDownRightOut,
-  openUpLeftOut,
-  openUpRightOut,
-  perspectiveUp,
-  perspectiveLeft,
-  perspectiveRight,
-  rotateDown,
-  rotateUp,
-  rotateLeft,
-  rotateRight,
-  slideDownReturn,
-  slideUpReturn,
-  slideLeftReturn,
-  slideRightReturn,
-  spaceOutUp,
-  spaceOutRight,
-  spaceOutDown,
-  spaceOutLeft,
-  spaceInUp,
-  spaceInRight,
-  spaceInDown,
-  spaceInLeft,
-  boingInUp,
-  boingOutDown,
-  bombRightOut,
-  bombLeftOut,
-  tinRightOut,
-  tinLeftOut,
-  tinUpOut,
-  tinDownOut,
-  tinRightIn,
-  tinLeftIn,
-  tinUpIn,
-  tinDownIn,
-  foolishOut
-];
+import { animations } from '../cons/animations.js';
 
 class Home extends Component {
   constructor(props) {
@@ -185,22 +77,12 @@ class Home extends Component {
     );
   };
 
-  // next = () => {
-  //   this.slider.slickNext();
-  //   this.props.setIndex(this.slider.innerSlider.state.currentSlide);
-  // };
-  //
-  // prev = () => {
-  //   this.slider.slickPrev();
-  //   this.props.setIndex(this.slider.innerSlider.state.currentSlide);
-  // };
-
   render() {
     const settings = {
       infinite: true,
       speed: 1000,
       slidesToShow: 4,
-      arrows: false,
+      arrows: true,
       focusOnSelect: true,
       variableWidth: true,
       centerMode: true,
@@ -208,10 +90,10 @@ class Home extends Component {
       animating: true,
       responsive: [
         {
-          breakpoint: 540,
+          breakpoint: '540px',
           settings: {
             slidesToShow: 2,
-            variableWidth: false
+            arrows: false
           }
         }
       ]
